@@ -31,4 +31,4 @@ setopt hist_ignore_all_dups
 #setopt auto_cd
 
 # so-long用のalias
-alias so='cc -Wall -Wextra -Werror -L/usr/X11R6/lib -lX11 -lX11 -lXext -framework OpenGL -framework AppKit -o so_long'
+#alias so='cc -L/usr/X11R6/lib -lX11 -lX11 -lXext -framework OpenGL -framework AppKit -o so_long'
