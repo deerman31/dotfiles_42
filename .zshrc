@@ -17,7 +17,8 @@ PROMPT='
 alias ls='ls -F'
 # ccでcc -Wall -Wextra -Werrorを使える
 #alias ccft='gcc -Wall -Wextra -Werror -o ykusano42'
-alias ccft='gcc -Wall -Wextra -Werror'
+alias ccft='cc -Wall -Wextra -Werror'
+alias mini='cc -Wall -Wextra -Werror -lreadline'
 # git add . commit -m pushまでを一気に行う
 alias gacp='(){git add . && git commit -m $1 && git push && echo "\n[git status]" && git status}'
 # 補完機能
