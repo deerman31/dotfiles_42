@@ -1,5 +1,6 @@
-# mail
-export MAIL=$USER@student.42tokyo.jp
+# 環境変数
+export USER=ykusano
+export MAIL=ykusano@student.42tokyo.jp
 
 # 色を使用出来るようにする
 autoload -Uz colors
@@ -20,22 +21,27 @@ zstyle ':vcs_info:git:*' unstagedstr "%F{yellow}+"
 zstyle ':vcs_info:*' formats "%F{cyan}%c%u[%b]%f"
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
-
-# PROMPT='%~ %\n> '
+# プロンプトカスタマイズ
 PROMPT='
 [%B%F{red}%n@%m%f%b:%F{green}%~%f]%F{cyan}$vcs_info_msg_0_%f
-%F{yellow}>%f '
-#[%B%F{red}%n@%m%f%b:%F{green}%~%f]
-#%F{yellow}>%f '
+%F{yellow}$%f '
 
+# alias
 # lsでls -GFを使える
 alias ls='ls -F'
 # ccでcc -Wall -Wextra -Werrorを使える
-#alias ccft='gcc -Wall -Wextra -Werror -o ykusano42'
-alias ccft='cc -Wall -Wextra -Werror'
+alias ccft='cc -Wall -Wextra -Werror -o ykusano42'
+# minishell
 alias mini='cc -Wall -Wextra -Werror -lreadline -o minishell'
+# git add . commit -m を一気に行う
+alias gac='(){git add . && git commit -m $1 && echo "\n[git status]" && git status}'
 # git add . commit -m pushまでを一気に行う
-alias gacp='(){git add . && git commit -m $1 && git push && echo "\n[git status]" && git status}'
+#alias gacp='(){git add . && git commit -m $1 && git push && echo "\n[git status]" && git status}'
+# ccでbrewでインストールしたgccを使う
+# alias cc='gcc-12'
+# alias gcc='gcc-12'
+# alias g++='g++-12'
+
 # 補完機能
 # 補完機能を有効にする
 autoload -Uz compinit && compinit
@@ -46,5 +52,5 @@ setopt hist_ignore_all_dups
 # ディレクトリ名だけでcdする
 #setopt auto_cd
 
-# so-long用のalias
-#alias so='cc -L/usr/X11R6/lib -lX11 -lX11 -lXext -framework OpenGL -framework AppKit -o so_long'
+# brew
+export PATH=/Users/ykusano/.brew/bin:/Users/ykusano/.brew/bin:/Users/ykusano/.brew/bin:/Users/ykusano/.brew/bin:/Users/ykusano/.brew/bin:/Users/ykusano/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/munki:/opt/X11/bin
