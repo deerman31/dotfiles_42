@@ -31,8 +31,8 @@ PROMPT='
 alias ls='ls -F'
 # ccでcc -Wall -Wextra -Werrorを使える
 alias ccft='cc -Wall -Wextra -Werror -o ykusano42'
-# minishell
-alias mini='cc -Wall -Wextra -Werror -lreadline -o minishell'
+# gitをgで入力できるようにした
+alias g='git'
 # git add . commit -m を一気に行う
 alias gac='(){git add . && git commit -m $1 && echo "\n[git status]" && git status}'
 # git add . commit -m pushまでを一気に行う
