@@ -35,12 +35,6 @@ alias ccft='cc -Wall -Wextra -Werror -o ykusano42'
 alias g='git'
 # git add . commit -m を一気に行う
 alias gac='(){git add . && git commit -m $1 && echo "\n[git status]" && git status}'
-# git add . commit -m pushまでを一気に行う
-#alias gacp='(){git add . && git commit -m $1 && git push && echo "\n[git status]" && git status}'
-# ccでbrewでインストールしたgccを使う
-# alias cc='gcc-12'
-# alias gcc='gcc-12'
-# alias g++='g++-12'
 
 # 補完機能
 # 補完機能を有効にする

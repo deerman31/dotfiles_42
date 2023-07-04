@@ -23,6 +23,3 @@ inoremap jk <ESC>
 set listchars=eol:↲,tab:→\ ,trail:_
 "非表示文字を表示する
 set list
-
-call plug#begin('~/.vim/plugged')
-call plug#end()
