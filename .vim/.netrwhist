@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/ykusano/Documents/CPP0-4/CPP00/ex00'
+let g:netrw_dirhist_2='/Users/ykusano/Documents/CPP0-4/CPP3/ex01/src'
+let g:netrw_dirhist_3='/Users/ykusano/Documents/ftcpp03/ex02'
+let g:netrw_dirhist_4='/Users/ykusano/Documents/CPP0-4/Sample/ftcpp04/ex00'
+let g:netrw_dirhist_5='/Users/ykusano/go/pkg/mod/github.com/deerman31/!golang_!shell@v0.0.0-20230825200704-0699fb5681ec/checks'

@@ -2,7 +2,6 @@
 set number
 "右下にどの場所にいるかなどの情報を表示
 set ruler
-
 "改行時に現在の行のインデントをキープする。
 set autoindent
 "tabを4文字分"
@@ -23,3 +22,8 @@ inoremap jk <ESC>
 set listchars=eol:↲,tab:→\ ,trail:_
 "非表示文字を表示する
 set list
+
+call plug#begin()
+"Plug 'https://github.com/fatih/vim-go.git'
+call plug#end()
+

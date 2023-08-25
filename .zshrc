@@ -28,8 +28,6 @@ PROMPT='
 # alias
 # lsでls -GFを使える
 alias ls='ls -F'
-# ccでcc -Wall -Wextra -Werrorを使える
-alias ccft='cc -Wall -Wextra -Werror -o ykusano42'
 # cpftで c++ -Wall -Wextra -Werror -std=c++98 -o ft++を使える
 alias cpft='c++ -Wall -Wextra -Werror -std=c++98 -o ft++'
 # gitをgで入力できるようにした

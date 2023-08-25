@@ -1,5 +1,5 @@
 cd ~/
 ln -sf goinfre/dotfiles/.zshrc .
 ln -sf goinfre/dotfiles/.vimrc .
-source .zshrc
-source .vimrc
+ln -sf goinfre/dotfiles/.vim .
+ln -sf goinfre/dotfiles/.emacs.d .
