@@ -5,11 +5,8 @@ export MAIL=ykusano@student.42tokyo.jp
 autoload -Uz colors
 colors
 
-# EditorをVimに設定
-export EDITOR=vim
-# vim 風キーバインドにする
-bindkey -v
-bindkey "jk" vi-cmd-mode
+# キーバインドをemacsに設定
+bindkey -e
 
 # git
 autoload -Uz vcs_info

@@ -24,6 +24,5 @@ set listchars=eol:↲,tab:→\ ,trail:_
 set list
 
 call plug#begin()
-"Plug 'https://github.com/fatih/vim-go.git'
 call plug#end()
 
